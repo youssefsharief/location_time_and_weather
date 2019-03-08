@@ -1,0 +1,39 @@
+{
+  "name": "time_weather",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "ts-node src/main.ts",
+    "pre": "rimraf dist && npm run build",
+    "start:prod": "node dist/main.js",
+    "lint": "tslint -p tsconfig.json -c tslint.json --fix",
+    "format": "prettier --write \"./**/*.ts\"",
+    "tslint-prettier-check": "tslint-config-prettier-check ./tslint.json"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.4.0",
+    "winston": "^3.2.1",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.10",
+    "@types/node": "^10.12.21",
+    "@types/request": "^2.48.1",
+    "jest": "^24.3.1",
+    "mockdate": "^2.0.2",
+    "prettier": "^1.16.4",
+    "prettier-tslint": "^0.4.2",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.1"
+  }
+}
