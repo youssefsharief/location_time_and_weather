@@ -7,4 +7,4 @@
 
 ## Notes
 
-In Production, api keys in config.ts should not be hard wired. Instead they should be extracted from environment variables.
+- In Production, api keys in config.ts should not be hard wired. Instead they should be saved as environment variables.
