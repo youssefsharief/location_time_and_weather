@@ -8,7 +8,7 @@
     "pre": "rimraf dist && npm run build",
     "start:prod": "node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json --fix",
-    "format": "prettier --write \"./**/*.ts\"",
+    "format": "prettier --write \"./**/*.{ts,js,json}\"",
     "tslint-prettier-check": "tslint-config-prettier-check ./tslint.json"
   },
   "license": "ISC",

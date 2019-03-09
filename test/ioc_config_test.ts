@@ -1,10 +1,10 @@
-import 'reflect-metadata';
+import 'reflect-metadata'
 
-import { Container, ContainerModule } from 'inversify';
-import { productionValues } from '../src/config/ioc-container-modules';
+import { Container, ContainerModule } from 'inversify'
+import { productionValues } from '../src/config/ioc-container-modules'
 
-const testingContainer = new Container({ autoBindInjectable: true });
+const testingContainer = new Container({ autoBindInjectable: true })
 
-testingContainer.load(productionValues);
+testingContainer.load(productionValues)
 
-export default testingContainer;
+export default testingContainer
