@@ -44,8 +44,8 @@ export class MainController {
       const time = await this.timeApiService.fetchTimeFromCoordinates(weather.coord.lat, weather.coord.lon)
       logger.log(
         'info',
-        `Weather for ${locationName}: Temp is ${weather.main.temp} Kelvin, humidity is ${weather.main.humidity}%,
-             and pressure is ${weather.main.pressure}hPa. Current Time is ${time.formatted}`,
+        `Weather for ${locationName}: Temp is ${weather.main.temp} Kelvin, humidity is ${weather.main.humidity}%.
+             Pressure is ${weather.main.pressure}hPa. Current Time is ${time.formatted}`,
       )
     } catch (e) {
       switch (e.constructor) {
